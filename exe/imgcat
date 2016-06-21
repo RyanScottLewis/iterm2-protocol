@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "iterm2-protocol"
+require "iterm2/protocol"
 
 ARGV.each { |path| puts ITerm2::Protocol.image(path: path) }
