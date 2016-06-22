@@ -1,36 +1,25 @@
 # ITerm2::Protocol
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/iterm2/protocol`. To experiment with that code, run `bin/console` for an interactive prompt.
+A wrapper for the iTerm2 xterm protocol extensions.
 
-TODO: Delete this and the text above, and describe your gem
+## Install
 
-## Installation
+### Bundler: `gem "iterm2-protocol"`
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'iterm2-protocol'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install iterm2-protocol
+### RubyGems: `gem install iterm2-protocol`
 
 ## Usage
 
-TODO: Write usage instructions here
+### Print an Image to Standard Output
 
-## Development
+```rb
+require "iterm2/protocol"
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+puts ITerm2::Protocol.image(path: path)
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Copyright
 
-## Contributing
+Copyright © 2016 Ryan Scott Lewis <ryan@rynet.us>.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/iterm2-protocol.
-
+The MIT License (MIT) - See `LICENSE.md` for further details.
