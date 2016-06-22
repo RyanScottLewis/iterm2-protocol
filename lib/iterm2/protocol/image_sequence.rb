@@ -33,7 +33,7 @@ module ITerm2
       #
       # @param [#to_s] value
       # @return [String]
-      attribute(:width) { |value| value.to_s }
+      attribute(:width) { |value| value.nil? ? "auto" : value.to_s }
 
       # @method height
       # Get the height.
@@ -52,7 +52,7 @@ module ITerm2
       #
       # @param [#to_s] value
       # @return [String]
-      attribute(:height) { |value| value.to_s }
+      attribute(:height) { |value| value.nil? ? "auto" : value.to_s }
 
       # @method preserve_aspect_ratio
       # Get whether to preserve the aspect ratio.
